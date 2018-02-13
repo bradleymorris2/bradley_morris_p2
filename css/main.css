@@ -3,7 +3,7 @@ a img {
     height: 2.5rem;
 }
 
-p h1 h2 h3 h4 h5 span article{
+p h1 h2 h3 h4 h5 span article a{
 	font-family: 'Raleway', Helvetica;
 }
 
@@ -137,7 +137,7 @@ footer article{
 	color: #646464; 
 }
 
-.homefoot{
+.homefooter{
 	margin-top: -45px;
 }
 
