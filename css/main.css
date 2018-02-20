@@ -3,8 +3,16 @@ a img {
     height: 2.5rem;
 }
 
-p h1 h2 h3 h4 h5 span article a{
-	font-family: 'Raleway', Helvetica;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', Helvetica;
+  color: #646464;
+  font-weight: 700;
+}
+
+p{
+  font-family: 'Raleway', Helvetica;
+  color: #646464;
+  font-weight: 350;
 }
 
 /***** Topbar *****/
@@ -16,9 +24,15 @@ p h1 h2 h3 h4 h5 span article a{
     margin-bottom: 0;
     overflow: hidden;
     position: relative;
-
 }
 
+.top-bar-section ul li{
+  background-color: transparent;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background: transparent;
+}
 
 .top-bar-section li:not(.has-form) a:not(.button){
 	background-color: transparent;
@@ -26,8 +40,8 @@ p h1 h2 h3 h4 h5 span article a{
 
 .top-bar-section li:not(.has-form) a:not(.button){
 	background-color: transparent;
-    line-height: 2.8125rem;
-    padding: 0 0.9375rem;
+  line-height: 2.8125rem;
+  padding: 0 0.9375rem;
 }
 
 .top-bar-section li.active:not(.has-form) a:not(.button){
@@ -36,18 +50,24 @@ p h1 h2 h3 h4 h5 span article a{
 }
 
 .top-bar-section ul li > a {
-    color: #FFFFFF;
+    color: #646464;
     display: block;
     font-family: 'Raleway', Helvetica, Roboto, Arial, sans-serif;
     font-size: 1rem;
     font-weight: normal;
     text-transform: none;
     width: 100%;
+    background-color: transparent;
 }
 
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+  background-color: #646464;
+  color: white;
+}
 
-
-
+.name a img{
+  height: 2.5rem;
+}
 
 
 
@@ -63,6 +83,7 @@ figure.hero {
 figure.hero img {
 	width: 100%;
 }
+
 figure.hero figcaption {
   position: absolute;
   bottom: 0;
@@ -96,24 +117,71 @@ body h2{
     text-rendering: optimizeLegibility;
 }
 
-/* shirts */
-main{
-	top: -45px;
+/* pannel */
+
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6{
+  font-size: 2rem;
+  color: #646464;
+}
+
+.panel {
+    border-style: solid;
+    border-width: 0px;
+    border-color: #646464;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
+    background: #fff;
+    color: #646464;
 }
 
 
 /* breadcrumbs */
-.breadcrumbs{
-	background-color: transparent;
-	border-style: none;
-	color: white;
+.breadcrumbs > * a{
+  color: white;
+  font-family: 'Raleway', Helvetica;
 }
 
-/* pagination not working*/
-.pagination{
-	align-content: center;
+.breadcrumbs {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #646464;
+    border-radius: 0;
+    display: block;
+    list-style: none;
+    margin-left: 0;
+    overflow: hidden;
+    padding: 0.5625rem 0.875rem 0.5625rem;
+    background-color: #646464;
+}
+/* pagination */
+ul.pagination li.current a, ul.pagination li.current button{
+  background-color: #646464;
+  color: white;
+  font-family: 'Raleway', Helvetica;
 }
 
+/* button */
+button, .button{
+  color: #646464;
+  background-color: transparent;
+  border-color: #696969;
+  border-style: solid;
+  border-width: 2px;
+  font-family: 'Raleway', Helvetica
+}
+
+button, .button:hover{
+  background-color: #646464;
+  color: white; 
+}
+
+
+/* related */
+a img {
+    border: none;
+    height: 10rem;
+    margin-bottom: 30px;
+}
 
 /***** Footer *****/
 footer, footer h3{
@@ -137,13 +205,29 @@ footer article{
 	color: #646464; 
 }
 
+.inline-list > li > *{
+  font-size: 2rem;
+  text-align: center;
+  color: #646464;
+  font-weight: 300;
+}
+
+.inline-list{
+  display: inline-block;
+}
+
 .homefooter{
 	margin-top: -45px;
 }
 
-.fa{
-	color: white;
-	font-size: 2.5rem;
-	text-align: center;
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+    text-align: center;
 }
 
